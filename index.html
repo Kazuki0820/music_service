@@ -198,7 +198,7 @@
     </div>	
 <div class="row">
 	<div class="col span-12">
- <form method="post" action="">
+ <form id="form" method="post" action="">
 <table class="table full-width">
   <tbody>
     <tr>
@@ -207,15 +207,15 @@
     </tr>
 	<tr>
       <th><label for="email">メールアドレス</label></th>
-      <td><input class="full-width" type="email" name="Email" placeholder="メールアドレスを記入" id="exampleEmailInput"></td>
+      <td><input class="full-width" id="email" type="email" name="Email" placeholder="メールアドレスを記入"></td>
     </tr>
     <tr>
-      <th><label for="tel">お電話番号</label></th>
-      <td><input class="full-width" type="tel" name="お電話番号" placeholder="お電話番号を記入" id="exampleTellInput"></td>
+      <th><label for="phone">お電話番号</label></th>
+      <td><input class="full-width" id="phone" type="phone" name="お電話番号" placeholder="お電話番号を記入"></td>
     </tr>
     <tr>
-      <th><label for="exampleMessage">お問い合わせ内容</label></th>
-      <td><textarea class="full-width textarea" name="お問い合わせ内容" placeholder="用件をご記入ください …" id="exampleMessage"></textarea></td>
+      <th><label for="message">お問い合わせ内容</label></th>
+      <td><textarea class="full-width textarea" name="お問い合わせ内容" placeholder="用件をご記入ください …" id="message"></textarea></td>
     </tr>
   </tbody>
 </table>
@@ -339,5 +339,12 @@
     <a href="https://popo-design.net" target="_blank">Copyright © popodesign.</a> 
         </div>
     <p id="pagetop"><a href="#">TOP</a></p>
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('GCS5HAqsNCTwAlGKo')
+</script>
 </body>
+
 </html>
